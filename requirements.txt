@@ -1,0 +1,5 @@
+fastapi
+uvicorn
+pptx
+geminiai
+google.generativeai
