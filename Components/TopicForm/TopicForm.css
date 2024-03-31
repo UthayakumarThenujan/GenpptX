@@ -1,0 +1,127 @@
+.wrapper {
+  width: 90%;
+  background: transparent;
+  border: 2px solid rgba(0, 0, 0, .2);
+  border-color: black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+  color: black;
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+  padding: 30px;
+  height: 220px;
+  margin-left: 6%;
+  transition: transform 0.3s ease; /* Add transition for transform property */
+}
+
+.wrapper:hover {
+  transform: translateY(-5px); /* Move the wrapper up slightly on hover */
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(42, 250, 46);
+  border-radius: 40px;
+  border-color: rgb(6, 132, 8);
+  color: black;
+  text-align: center;
+}
+
+
+.input-box input::placeholder {
+  color: black;
+  text-align: center;
+}
+
+.image-container button {
+  width: 70%;
+  height: 45px;
+  background: black;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+  margin-top: 45px;
+  margin-left: 0px;
+  transition: all 0.3s ease;
+}
+
+.image-container button:hover {
+  font-size: 18px;
+  width: 75%;
+}
+
+.image-container button:not(:hover) {
+  width: 70%;
+  font-size: 16px;
+}
+
+.container:hover .image-item img {
+  transform: scale(1.1); /* Increase the size of the image by 10% on hover */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.image-item {
+  width: 200px; /* Adjust the width of the image container */
+  height: 120px; /* Adjust the height of the image container */
+  margin: 8px;
+  text-align: center; /* Center the caption text */
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.image-item img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add smooth border radius */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.image-item .caption {
+  margin-top: 5px; /* Adjust the spacing between image and caption */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the start (top) of the container */
+  align-items: center; /* Center items horizontally */
+  width: 250px; /* Adjust the width of the container */
+  height: 235px; /* Adjust the height of the container */
+  margin: 10px; /* Adjust the spacing between containers */
+  border-radius: 10px; /* Add smooth border radius */
+  background-color: antiquewhite;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Move the container up slightly on hover */
+}

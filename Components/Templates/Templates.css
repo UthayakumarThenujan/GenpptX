@@ -1,0 +1,50 @@
+.container:hover .image-item img {
+  transform: scale(1.1); /* Increase the size of the image by 10% on hover */
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+  justify-content: center; /* Center the images horizontally */
+}
+
+.image-item {
+  width: 200px; /* Adjust the width of the image container */
+  height: 120px; /* Adjust the height of the image container */
+  margin: 8px;
+  text-align: center; /* Center the caption text */
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.image-item img {
+  width: 100%; /* Ensure the image fills the container */
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add smooth border radius */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.image-item .caption {
+  margin-top: 5px; /* Adjust the spacing between image and caption */
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the start (top) of the container */
+  align-items: center; /* Center items horizontally */
+  width: 250px; /* Adjust the width of the container */
+  height: 200px; /* Adjust the height of the container */
+  margin: 10px; /* Adjust the spacing between containers */
+  border-radius: 10px; /* Add smooth border radius */
+  background-color: antiquewhite;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+  transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.container:hover {
+  transform: translateY(-5px); /* Move the container up slightly on hover */
+}
