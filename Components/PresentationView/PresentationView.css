@@ -1,0 +1,64 @@
+/* LoadingAnimation.css */
+/* .wrapper{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(0,0,0, .2);
+  border-color: black;
+  box-shadow: 0 0 30px rgba(0,0,0, .2);
+  color: black;
+  backdrop-filter: blur(1px);
+  border-radius:10px ;
+  padding: 100px 40px;
+  height: 350px;
+} */
+
+.wrapper h1{
+  font-size: 36px;
+  text-align: center;
+  margin-top:10px;
+}
+
+.loader {
+    border: 4px solid #a1f6b2; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-right: 4px solid #6d1759;
+    border-bottom: 4px solid #cdd64a;
+    border-left: 4px solid #000000; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Apply animation */
+    padding:50px;
+    margin-left:35%;
+    margin-top:20%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+.element {
+    background-image: url('../Presentation/../Assets/presentation.png');
+    background-size: cover; /* Other background properties like background-position, background-repeat, etc. */
+    width: 20%;
+    height: 23%;
+    margin-bottom: 20px;
+    margin-left:120px;
+  }
+
+/* .link:hover{
+  font-size:13px;
+  
+} */
+
+.link{
+  font-size:12px ;
+  margin-left:45px;
+  transition: all 0.3s ease;
+}
+
+/* .link:not(:hover) {
+  font-size: 12px;
+} */

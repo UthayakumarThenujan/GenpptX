@@ -1,0 +1,40 @@
+/* LoadingAnimation.css */
+
+.loader2 {
+    border: 4px solid #a1f6b2; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-right: 4px solid #6d1759;
+    border-bottom: 4px solid #cdd64a;
+    border-left: 4px solid #000000; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Apply animation */
+    padding:50px;
+    margin-left:35%;
+    margin-top:10px;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .wrapper1 {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(0,0,0, .2);
+    border-color: black;
+    box-shadow: 0 0 30px rgba(0,0,0, .2);
+    color: black;
+    backdrop-filter: blur(1px);
+    border-radius:10px ;
+    padding: 100px 40px;
+    height: 350px;
+  }
+  
+  .wrapper1 h1{
+    font-size: 36px;
+    text-align: center;
+    margin-top:10px;
+  }

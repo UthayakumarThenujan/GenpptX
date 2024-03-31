@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Kiwi+Maru&family=Macondo&family=Madimi+One&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body {
+  margin: 0;
+  font-family: "Kiwi Maru", serif, "Truculenta", sans-serif, "Macondo", "Madimi One", "Alkatra", system-ui;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0; /* Set background color */
+  position: relative; /* Ensure relative positioning for absolute circles */
+  overflow: hidden; /* Prevent circles from overflowing */
+}
+
+body:before {
+  content: '';
+  position:absolute;
+  top: 0px;
+  left: 0px;
+  width: 25%;
+  height: 50%;
+  background: radial-gradient(circle closest-side, #ff6384 50%, transparent 21%); /* First circle color */
+  background-size: 300px 300px; /* Adjust circle size */
+  z-index: 0; /* Place circles behind other content */
+}
+
+body:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: 25%;
+  background: radial-gradient(circle closest-side, #36a2eb 50%, transparent 21%); /* Second circle color */
+  background-size: 300px 300px; /* Adjust circle size */
+  z-index: -1; /* Place circles behind other content */
+}
+
+
+/* CSS */
+
+
+.home-icon img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-left:25px;
+}
+
+.header-icons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.home-back-icons {
+  position: fixed;
+  top: 20px; /* Adjust the distance from the top */
+  left: 20px; /* Adjust the distance from the left */
+  z-index: 1; /* Ensure the icons are above other content */
+}
+
+.home-icon,
+.back-icon {
+  display: inline-block;
+  margin-right: 5px; /* Adjust the spacing between the icons */
+}
+
+
+
+.back-icon img {
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

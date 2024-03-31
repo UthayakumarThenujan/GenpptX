@@ -1,0 +1,75 @@
+/* LoadingAnimation.css */
+.wrapper2{
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(0,0,0, .2);
+  border-color: black;
+  box-shadow: 0 0 30px rgba(0,0,0, .2);
+  color: black;
+  backdrop-filter: blur(1px);
+  border-radius:10px ;
+  padding: 100px 40px;
+  height: 350px;
+}
+
+.wrapper2 h1{
+  font-size: 36px;
+  text-align: center;
+  margin-top:10px;
+}
+
+.loader {
+    border: 4px solid #a1f6b2; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-right: 4px solid #6d1759;
+    border-bottom: 4px solid #cdd64a;
+    border-left: 4px solid #000000; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite; /* Apply animation */
+    padding:50px;
+    margin-left:35%;
+    margin-top:20%;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+
+.element {
+    background-image: url('../Presentation/../Assets/presentation.png');
+    background-size: cover; /* Other background properties like background-position, background-repeat, etc. */
+    width: 20%;
+    height: 45%;
+    margin-top: 0px;
+    margin-left:120px;
+  }
+
+/* .link:hover{
+  font-size:13px;
+  
+} */
+
+.link {
+  display: inline-block; /* Display as inline-block to take up only necessary space */
+  padding: 10px 20px; /* Add padding to create clickable area */
+  background-color: #f69696; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 15px; /* Button text size */
+  text-align: center; /* Center align text */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s; /* Add smooth transition for background color */
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #7fbfea; /* Darken background color on hover */
+}
+
+/* .link:not(:hover) {
+  font-size: 12px;
+} */
